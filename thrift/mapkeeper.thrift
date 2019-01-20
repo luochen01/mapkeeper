@@ -62,6 +62,8 @@ service MapKeeper
      *         Error - if ping failed.
      */
     ResponseCode ping(),
+    
+	ResponseCode shutdown(),
 
     /**
      * Add a new map.
@@ -211,4 +213,6 @@ service MapKeeper
      *          Error
      */
     ResponseCode remove(1:string mapName, 2:binary key),
+    
+   
 }
